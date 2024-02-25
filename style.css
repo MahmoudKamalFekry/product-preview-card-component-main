@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+   --Cream-color: hsl(30, 38%, 92%);
+   --dark-blue:hsl(212, 21%, 14%);
+   --Dark-gray: hsl(228, 12%, 48%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Cream-color);
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Fraunces", serif */
+    display: grid;
+    place-content:center;
+    min-height: 100vh;
+
+
+}
+
+main {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+main picture img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+main .product-content {
+    background-color: #fff;
+    padding: 25px ;
+    border-radius: 0px 10px 10px 0px;
+    
+}
+
+main .product-content .category{
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--Dark-gray);
+    margin: 20px 0;
+    
+}
+
+
+main .product-content h1 {
+    margin: 20px 0;
+    font-family: "Fraunces", serif;
+    line-height: 1;
+    font-size: 40px;
+    color: var(--dark-blue);
+}
+
+main .product-content .description {
+    margin: 20px 0;
+    line-height: 1.6;
+    color: var(--Dark-gray);
+}
+main .price {
+    display: flex;
+    align-items: center;
+}
+
+main .price .discount {
+    font-size: 30px;
+    color: var(--Dark-cyan);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+main .price .original {
+    margin-left: 15px;
+    color: var(--Dark-gray);
+    
+    
+}
+
+.product-content .cart {
+    border: none;
+    background-color: var(--Dark-cyan);
+    padding: 10px 15px;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.product-content .cart .fa-cart-shopping{
+    margin-right: 10px;
+}
+@media (max-width:700px) {
+    main {
+       grid-template-columns: 1fr; 
+
+    }
+   
+    main .product-content {
+        background-color: #fff;
+        padding: 25px;
+        padding-top: 0px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        border-radius: 0px 10px 10px 0px;
+    }
+    main {
+        padding:  25px;
+    }
+    
+    
+}
+
+
